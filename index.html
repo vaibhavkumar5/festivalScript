@@ -1107,7 +1107,7 @@
 
 
     shareString += " *Send you a special message, open this once* 🙏🙏🙏 %0A👇👇 "
-    shareString += "%0A"(window.location.href.split("?")[0] + "?bl=" + sname).replace("#", "").replace(/ /g, "-");
+    shareString += (window.location.href.split("?")[0] + "?bl=" + sname).replace("#", "").replace(/ /g, "-");
 
 
     whatsappHref = "whatsapp://send?text=" + shareString;
